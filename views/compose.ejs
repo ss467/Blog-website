@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A quick compose</title>
+</head>
+<body>
+    
+    <%- include('partials/header') %>
+    <h1>Compose</h1><br>
+    <form action="/compose" method="post">
+    <h3>Title</h3><br>
+    <input type="text" class="form-control" id="usr" name="postTitle"><br>
+    <h3>Content</h3><br>
+    
+       
+    <textarea class="form-control" rows="5" id="comment" name="postContent"></textarea><br>
+      
+    <button type="submit" >Publish</button>
+   
+    <%- include('partials/footer') %>  
+
+
+</body>
+</html>

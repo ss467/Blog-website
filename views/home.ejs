@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jack blog</title>
+</head>
+<body>
+
+    <%- include('partials/header') %> 
+
+    <h1>Home real</h1>
+    <p><%= homeStartingContent %> </p>
+    <% superpositions.forEach(function(superposition) {  %> 
+
+      <h1><%=  superposition.title %></h1> 
+      <p><%= superposition.content %> </p>  
+
+     
+
+      <% }); %> 
+ 
+    
+ 
+    <%- include('partials/footer') %> 
+    
+  
+</body>
+</html>
